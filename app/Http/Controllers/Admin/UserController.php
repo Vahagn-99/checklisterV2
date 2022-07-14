@@ -1,12 +1,12 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Admin;
 
-use App\Http\Requests\StoreChecklistRequest;
-use App\Http\Requests\UpdateChecklistRequest;
-use App\Models\Checklist;
+use App\Http\Controllers\Controller;
+use App\Models\User;
+use Illuminate\Http\Request;
 
-class ChecklistController extends Controller
+class UserController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,7 +15,9 @@ class ChecklistController extends Controller
      */
     public function index()
     {
-        //
+        $users = User::paginate();
+
+        return view('admin.users.index', compact('users'));
     }
 
     /**
@@ -31,10 +33,10 @@ class ChecklistController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \App\Http\Requests\StoreChecklistRequest  $request
+     * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(StoreChecklistRequest $request)
+    public function store(Request $request)
     {
         //
     }
@@ -42,10 +44,10 @@ class ChecklistController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Checklist  $checklist
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show(Checklist $checklist)
+    public function show($id)
     {
         //
     }
@@ -53,10 +55,10 @@ class ChecklistController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\Checklist  $checklist
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit(Checklist $checklist)
+    public function edit($id)
     {
         //
     }
@@ -64,11 +66,11 @@ class ChecklistController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \App\Http\Requests\UpdateChecklistRequest  $request
-     * @param  \App\Models\Checklist  $checklist
+     * @param  \Illuminate\Http\Request  $request
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(UpdateChecklistRequest $request, Checklist $checklist)
+    public function update(Request $request, $id)
     {
         //
     }
@@ -76,10 +78,10 @@ class ChecklistController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Checklist  $checklist
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Checklist $checklist)
+    public function destroy($id)
     {
         //
     }

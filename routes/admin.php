@@ -1,8 +1,9 @@
 <?php
 
-use App\Http\Controllers\ChecklistController;
-use App\Http\Controllers\ChecklistsGroupController;
-use Illuminate\Support\Facades\Auth;
+use App\Http\Controllers\Admin\ChecklistsController;
+use App\Http\Controllers\Admin\ChecklistsGroupsController;
+use App\Http\Controllers\Admin\HomeController;
+use App\Http\Controllers\Admin\UserController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -24,7 +25,13 @@ Route::group(
         'midlleware' => 'is_admin',
     ],
     function () {
-        Route::resource('checklists_group',ChecklistsGroupController::class);
-        Route::resource('checklists_group.checklists',ChecklistController::class);
+        Route::get('home', [HomeController::class, 'home'])->name('home');
+        Route::resource('checklists_groups', ChecklistsGroupsController::class);
+        Route::resource(
+            'checklists_groups.checklists',
+            ChecklistsController::class
+        );
+        Route::resource('users', UserController::class);
+        Route::resource('profile', ProfileController::class);
     }
 );

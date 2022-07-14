@@ -1,23 +1,14 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Admin;
 
+use App\Models\ChecklistsGroup;
+use App\Http\Controllers\Controller;
 use App\Http\Requests\StoreChecklistsGroupRequest;
 use App\Http\Requests\UpdateChecklistsGroupRequest;
-use App\Models\ChecklistsGroup;
 
-class ChecklistsGroupController extends Controller
+class ChecklistsGroupsController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function index()
-    {
-        //
-    }
-
     /**
      * Show the form for creating a new resource.
      *
@@ -25,7 +16,7 @@ class ChecklistsGroupController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.checklist_groups.craete');
     }
 
     /**
@@ -36,18 +27,8 @@ class ChecklistsGroupController extends Controller
      */
     public function store(StoreChecklistsGroupRequest $request)
     {
-        //
-    }
-
-    /**
-     * Display the specified resource.
-     *
-     * @param  \App\Models\ChecklistsGroup  $checklistsGroup
-     * @return \Illuminate\Http\Response
-     */
-    public function show(ChecklistsGroup $checklistsGroup)
-    {
-        //
+        ChecklistsGroup::create($request->validated());
+        return redirect()->route('admin.home');
     }
 
     /**
@@ -58,7 +39,7 @@ class ChecklistsGroupController extends Controller
      */
     public function edit(ChecklistsGroup $checklistsGroup)
     {
-        //
+        return view('admin.checklists.create', compact('checklistsGroup'));
     }
 
     /**
@@ -68,9 +49,12 @@ class ChecklistsGroupController extends Controller
      * @param  \App\Models\ChecklistsGroup  $checklistsGroup
      * @return \Illuminate\Http\Response
      */
-    public function update(UpdateChecklistsGroupRequest $request, ChecklistsGroup $checklistsGroup)
-    {
-        //
+    public function update(
+        UpdateChecklistsGroupRequest $request,
+        ChecklistsGroup $checklistsGroup
+    ) {
+        $checklistsGroup->create($request->validated());
+        return redirect()->route('admin.home');
     }
 
     /**
@@ -81,6 +65,7 @@ class ChecklistsGroupController extends Controller
      */
     public function destroy(ChecklistsGroup $checklistsGroup)
     {
-        //
+        $checklistsGroup->delete();
+        return redirect()->route('admin.home');
     }
 }
