@@ -14,9 +14,22 @@ class ChecklistsGroupsController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+    public function index()
+    {
+        return view('admin.checklist_groups.index', [
+            'checklists_groups' => ChecklistsGroup::withCount(
+                'checklists'
+            )->get(),
+        ]);
+    }
+    /**
+     * Show the form for creating a new resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
     public function create()
     {
-        return view('admin.checklist_groups.craete');
+        return view('admin.checklist_groups.create');
     }
 
     /**

@@ -3,6 +3,7 @@
 use App\Http\Controllers\Admin\ChecklistsController;
 use App\Http\Controllers\Admin\ChecklistsGroupsController;
 use App\Http\Controllers\Admin\HomeController;
+use App\Http\Controllers\Admin\ProfileController;
 use App\Http\Controllers\Admin\UserController;
 use Illuminate\Support\Facades\Route;
 
@@ -26,11 +27,11 @@ Route::group(
     ],
     function () {
         Route::get('home', [HomeController::class, 'home'])->name('home');
-        Route::resource('checklists_groups', ChecklistsGroupsController::class);
         Route::resource(
-            'checklists_groups.checklists',
-            ChecklistsController::class
-        );
+            'checklists_groups',
+            ChecklistsGroupsController::class
+        )->except('show');
+        Route::resource('checklists', ChecklistsController::class);
         Route::resource('users', UserController::class);
         Route::resource('profile', ProfileController::class);
     }

@@ -33,12 +33,21 @@
             </a>
         </li>
 
-        <li class="nav-item {{ request()->routeIs('admin.checklists_groups.checklists.create') ? 'active' : '' }}">
-            <a href="{{ route('admin.checklists_groups.create') }}" class="nav-link">
+        <li class="nav-item {{ request()->routeIs('admin.checklists_groups.index') ? 'active' : '' }}">
+            <a href="{{ route('admin.checklists_groups.index') }}" class="nav-link">
                 <span class="sidebar-icon me-3">
                     <i class="fas fa-user-groupe fa-fw"></i>
                 </span>
-                <span class="sidebar-text">{{ __('Checklist Groups') }}</span>
+                <span class="sidebar-text">{{ __('Checklists Groups') }}</span>
+            </a>
+        </li>
+
+        <li class="nav-item {{ request()->routeIs('admin.checklists.index') ? 'active' : '' }}">
+            <a href="{{ route('admin.checklists.index') }}" class="nav-link">
+                <span class="sidebar-icon me-3">
+                    <i class="fas fa-user-groupe fa-fw"></i>
+                </span>
+                <span class="sidebar-text">{{ __('Checklists') }}</span>
             </a>
         </li>
 

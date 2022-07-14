@@ -13,7 +13,7 @@ class StoreChecklistsGroupRequest extends FormRequest
      */
     public function authorize()
     {
-        return false;
+        return auth()->user()->is_admin;
     }
 
     /**
@@ -24,7 +24,7 @@ class StoreChecklistsGroupRequest extends FormRequest
     public function rules()
     {
         return [
-            //
+            'name' => ['required', 'string', 'unique:checklists_groups'],
         ];
     }
 }

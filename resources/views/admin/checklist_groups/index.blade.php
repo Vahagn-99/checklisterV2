@@ -6,218 +6,49 @@
             <div class="col-12 col-xl-12">
                 <div class="col-12 px-0">
                     <div class="card-body" bis_skin_checked="1">
+                        
                         <div class="table-responsive" bis_skin_checked="1">
                             <table class="table table-centered table-nowrap mb-0 rounded">
                                 <thead class="thead-light">
                                     <tr>
-                                        <th class="border-0 rounded-start">Country</th>
-                                        <th class="border-0">All</th>
-                                        <th class="border-0">All Change</th>
-                                        <th class="border-0">Travel &amp; Local</th>
-                                        <th class="border-0">Travel &amp; Local Change</th>
-                                        <th class="border-0">Widgets</th>
-                                        <th class="border-0 rounded-end">Widgets Change</th>
+                                        <th class="border-0 rounded-start">{{ __('Id') }}</th>
+                                        <th class="border-0">{{ __('name') }}</th>
+                                        <th class="border-0">{{ __('created in') }}</th>
+                                        <th class="border-0">{{ __('checkilsts count') }}</th>
+                                        <th class="border-0 text-center">{{ __('Actions') }}</th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr>
-                                        <td class="border-0"><a href="#" class="d-flex align-items-center"><img
-                                                    class="me-2 image image-small rounded-circle" alt="Image placeholder"
-                                                    src="../../assets/img/flags/united-states-of-america.svg">
-                                                <div bis_skin_checked="1"><span class="h6">United States</span></div>
-                                            </a></td>
-                                        <td class="border-0 fw-bold">106</td>
-                                        <td class="border-0 text-danger">
-                                            <div class="d-flex align-items-center" bis_skin_checked="1"><svg
-                                                    class="icon icon-xs me-1" fill="currentColor" viewBox="0 0 20 20"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path fill-rule="evenodd"
-                                                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                                                        clip-rule="evenodd"></path>
-                                                </svg> <span class="fw-bold">5</span></div>
-                                        </td>
-                                        <td class="border-0 fw-bold">3</td>
-                                        <td class="border-0">=</td>
-                                        <td class="border-0 fw-bold">32</td>
-                                        <td class="border-0 text-success">
-                                            <div class="d-flex align-items-center" bis_skin_checked="1"><svg
-                                                    class="icon icon-xs me-1" fill="currentColor" viewBox="0 0 20 20"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path fill-rule="evenodd"
-                                                        d="M14.707 12.707a1 1 0 01-1.414 0L10 9.414l-3.293 3.293a1 1 0 01-1.414-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 010 1.414z"
-                                                        clip-rule="evenodd"></path>
-                                                </svg> <span class="fw-bold">3</span></div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="border-0"><a href="#" class="d-flex align-items-center"><img
-                                                    class="me-2 image image-small rounded-circle" alt="Image placeholder"
-                                                    src="../../assets/img/flags/canada.svg">
-                                                <div bis_skin_checked="1"><span class="h6">Canada</span></div>
-                                            </a></td>
-                                        <td class="border-0 fw-bold">76</td>
-                                        <td class="border-0 text-success">
-                                            <div class="d-flex align-items-center" bis_skin_checked="1"><svg
-                                                    class="icon icon-xs me-1" fill="currentColor" viewBox="0 0 20 20"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path fill-rule="evenodd"
-                                                        d="M14.707 12.707a1 1 0 01-1.414 0L10 9.414l-3.293 3.293a1 1 0 01-1.414-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 010 1.414z"
-                                                        clip-rule="evenodd"></path>
-                                                </svg> <span class="fw-bold">17</span></div>
-                                        </td>
-                                        <td class="border-0 fw-bold">4</td>
-                                        <td class="border-0">=</td>
-                                        <td class="border-0 fw-bold">30</td>
-                                        <td class="border-0 text-success">
-                                            <div class="d-flex align-items-center" bis_skin_checked="1"><svg
-                                                    class="icon icon-xs me-1" fill="currentColor" viewBox="0 0 20 20"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path fill-rule="evenodd"
-                                                        d="M14.707 12.707a1 1 0 01-1.414 0L10 9.414l-3.293 3.293a1 1 0 01-1.414-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 010 1.414z"
-                                                        clip-rule="evenodd"></path>
-                                                </svg> <span class="fw-bold">3</span></div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="border-0"><a href="#" class="d-flex align-items-center"><img
-                                                    class="me-2 image image-small rounded-circle" alt="Image placeholder"
-                                                    src="../../assets/img/flags/united-kingdom.svg">
-                                                <div bis_skin_checked="1"><span class="h6">United Kingdom</span></div>
-                                            </a></td>
-                                        <td class="border-0 fw-bold">147</td>
-                                        <td class="border-0 text-success">
-                                            <div class="d-flex align-items-center" bis_skin_checked="1"><svg
-                                                    class="icon icon-xs me-1" fill="currentColor" viewBox="0 0 20 20"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path fill-rule="evenodd"
-                                                        d="M14.707 12.707a1 1 0 01-1.414 0L10 9.414l-3.293 3.293a1 1 0 01-1.414-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 010 1.414z"
-                                                        clip-rule="evenodd"></path>
-                                                </svg> <span class="fw-bold">10</span></div>
-                                        </td>
-                                        <td class="border-0 fw-bold">5</td>
-                                        <td class="border-0">=</td>
-                                        <td class="border-0 fw-bold">34</td>
-                                        <td class="border-0 text-success">
-                                            <div class="d-flex align-items-center" bis_skin_checked="1"><svg
-                                                    class="icon icon-xs me-1" fill="currentColor" viewBox="0 0 20 20"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path fill-rule="evenodd"
-                                                        d="M14.707 12.707a1 1 0 01-1.414 0L10 9.414l-3.293 3.293a1 1 0 01-1.414-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 010 1.414z"
-                                                        clip-rule="evenodd"></path>
-                                                </svg> <span class="fw-bold">7</span></div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="border-0"><a href="#" class="d-flex align-items-center"><img
-                                                    class="me-2 image image-small rounded-circle" alt="Image placeholder"
-                                                    src="../../assets/img/flags/france.svg">
-                                                <div bis_skin_checked="1"><span class="h6">France</span></div>
-                                            </a></td>
-                                        <td class="border-0 fw-bold">112</td>
-                                        <td class="border-0 text-success">
-                                            <div class="d-flex align-items-center" bis_skin_checked="1"><svg
-                                                    class="icon icon-xs me-1" fill="currentColor" viewBox="0 0 20 20"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path fill-rule="evenodd"
-                                                        d="M14.707 12.707a1 1 0 01-1.414 0L10 9.414l-3.293 3.293a1 1 0 01-1.414-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 010 1.414z"
-                                                        clip-rule="evenodd"></path>
-                                                </svg> <span class="fw-bold">3</span></div>
-                                        </td>
-                                        <td class="border-0 fw-bold">5</td>
-                                        <td class="border-0 text-success">
-                                            <div class="d-flex align-items-center" bis_skin_checked="1"><svg
-                                                    class="icon icon-xs me-1" fill="currentColor" viewBox="0 0 20 20"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path fill-rule="evenodd"
-                                                        d="M14.707 12.707a1 1 0 01-1.414 0L10 9.414l-3.293 3.293a1 1 0 01-1.414-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 010 1.414z"
-                                                        clip-rule="evenodd"></path>
-                                                </svg> <span class="fw-bold">1</span></div>
-                                        </td>
-                                        <td class="border-0 fw-bold">34</td>
-                                        <td class="border-0 text-danger">
-                                            <div class="d-flex align-items-center" bis_skin_checked="1"><svg
-                                                    class="icon icon-xs me-1" fill="currentColor" viewBox="0 0 20 20"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path fill-rule="evenodd"
-                                                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                                                        clip-rule="evenodd"></path>
-                                                </svg> <span class="fw-bold">2</span></div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="border-0"><a href="#" class="d-flex align-items-center"><img
-                                                    class="me-2 image image-small rounded-circle" alt="Image placeholder"
-                                                    src="../../assets/img/flags/japan.svg">
-                                                <div bis_skin_checked="1"><span class="h6">Japan</span></div>
-                                            </a></td>
-                                        <td class="border-0 fw-bold">115</td>
-                                        <td class="border-0 text-danger">
-                                            <div class="d-flex align-items-center" bis_skin_checked="1"><svg
-                                                    class="icon icon-xs me-1" fill="currentColor" viewBox="0 0 20 20"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path fill-rule="evenodd"
-                                                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                                                        clip-rule="evenodd"></path>
-                                                </svg> <span class="fw-bold">12</span></div>
-                                        </td>
-                                        <td class="border-0 fw-bold">6</td>
-                                        <td class="border-0 text-danger">
-                                            <div class="d-flex align-items-center" bis_skin_checked="1"><svg
-                                                    class="icon icon-xs me-1" fill="currentColor" viewBox="0 0 20 20"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path fill-rule="evenodd"
-                                                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                                                        clip-rule="evenodd"></path>
-                                                </svg> <span class="fw-bold">1</span></div>
-                                        </td>
-                                        <td class="border-0 fw-bold">37</td>
-                                        <td class="border-0 text-danger">
-                                            <div class="d-flex align-items-center" bis_skin_checked="1"><svg
-                                                    class="icon icon-xs me-1" fill="currentColor" viewBox="0 0 20 20"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path fill-rule="evenodd"
-                                                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                                                        clip-rule="evenodd"></path>
-                                                </svg> <span class="fw-bold">5</span></div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="border-0"><a href="#" class="d-flex align-items-center"><img
-                                                    class="me-2 image image-small rounded-circle" alt="Image placeholder"
-                                                    src="../../assets/img/flags/germany.svg">
-                                                <div bis_skin_checked="1"><span class="h6">Germany</span></div>
-                                            </a></td>
-                                        <td class="border-0 fw-bold">220</td>
-                                        <td class="border-0 text-danger">
-                                            <div class="d-flex align-items-center" bis_skin_checked="1"><svg
-                                                    class="icon icon-xs me-1" fill="currentColor" viewBox="0 0 20 20"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path fill-rule="evenodd"
-                                                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                                                        clip-rule="evenodd"></path>
-                                                </svg> <span class="fw-bold">56</span></div>
-                                        </td>
-                                        <td class="border-0 fw-bold">7</td>
-                                        <td class="border-0 text-danger">
-                                            <div class="d-flex align-items-center" bis_skin_checked="1"><svg
-                                                    class="icon icon-xs me-1" fill="currentColor" viewBox="0 0 20 20"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path fill-rule="evenodd"
-                                                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                                                        clip-rule="evenodd"></path>
-                                                </svg> <span class="fw-bold">3</span></div>
-                                        </td>
-                                        <td class="border-0 fw-bold">30</td>
-                                        <td class="border-0 text-success">
-                                            <div class="d-flex align-items-center" bis_skin_checked="1"><svg
-                                                    class="icon icon-xs me-1" fill="currentColor" viewBox="0 0 20 20"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path fill-rule="evenodd"
-                                                        d="M14.707 12.707a1 1 0 01-1.414 0L10 9.414l-3.293 3.293a1 1 0 01-1.414-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 010 1.414z"
-                                                        clip-rule="evenodd"></path>
-                                                </svg> <span class="fw-bold">2</span></div>
-                                        </td>
-                                    </tr>
+                                    @foreach ($checklists_groups ?? [] as $group)
+                                        <tr>
+                                            <td class="border-0 fw-bold">{{ $group->id }}</td>
+                                            <td class="border-0">{{ $group->name }}</td>
+                                            <td class="border-0 fw-bold">{{ $group->created_at }}</td>
+                                            <td class="border-0 fw-bold">{{ $group->checklsits_count }}</td>
+                                            <td class="border-0 fw-bold text-center">
+                                                <div class="card-body p-0 d-inline-flex align-items-center">
+                                                    <a class="btn btn-sm btn-gray-800 d-inline-flex align-items-center"
+                                                        style="    margin-right: 3px;"
+                                                        href="{{ route('admin.checklists_groups.edit', $group) }}"><svg
+                                                            class="icon icon-xs me-1" fill="currentColor"
+                                                            viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M8 9a3 3 0 100-6 3 3 0 000 6zM8 11a6 6 0 016 6H2a6 6 0 016-6zM16 7a1 1 0 10-2 0v1h-1a1 1 0 100 2h1v1a1 1 0 102 0v-1h1a1 1 0 100-2h-1V7z">
+                                                            </path>
+                                                        </svg> {{ __('Edit') }} </a>
+                                                    <form id="delete-form"
+                                                        action="{{ route('admin.checklists_groups.destroy', $group) }}"
+                                                        method="post">
+                                                        @method('DELETE')
+                                                        @csrf
+                                                        <button class="btn btn-sm btn-secondary"
+                                                            onclick="return confirm('Are you sure ?')"
+                                                            type="submit">{{ __('Delete') }}</button>
+                                                    </form>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    @endforeach
                                 </tbody>
                             </table>
                         </div>
